@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>New Form</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Submit Form</h1>
+      <form class="form-horizontal" role="form"  action="new-form_proccess.php" method="post">
+        <div class="form-group">
+          <label for="name" class="control-label col-sm-3">Name *</label>
+          <div class="col-sm-5">
+            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" maxlength="30" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="control-label col-sm-3">E-mail *</label>
+          <div class="col-sm-5">
+            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail Address" maxlength="40" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject" class="control-label col-sm-3">Subject *</label>
+          <div class="col-sm-5">
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Add your Subject" maxlength="30" required>
+          </div>
+        </div>
+          <div class="form-group">
+            <label for="subject" class="control-label col-sm-3">Select Your Gender *</label>
+            <div class="col-sm-3">
+              <select class="form-control" name="gender" required>
+                <option value="" hidden="hidden">Your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="skills" class="control-label col-sm-3">Skills</label>
+          <div class="col-sm-6">
+            <label class="checkbox-inline" for=""><input type="checkbox" name="skill1" value="HTML">HTML</label>
+            <label class="checkbox-inline" for=""><input type="checkbox" name="skill2" value="CSS">CSS</label>
+            <label class="checkbox-inline" for=""><input type="checkbox" name="skill3" value="PHP">PHP</label>
+            <label class="checkbox-inline" for=""><input type="checkbox" name="skill4" value="Javascript">Javascript</label>
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-3" for="">Select Your Country *</label>
+          <div class="col-sm-3">
+            <select class="form-control" name="country" required="">
+              <option value="" hidden="hidden">Your country</option>
+              <option value="spain">Spain</option>
+              <option value="france">France</option>
+              <option value="russia">Russia</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-3" for="">Comments</label>
+          <div class="col-sm-5">
+            <textarea id="comments" class="form-control" name="comments" rows="5" maxlength="400"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-5 col-sm-offset-3">
+            <button type="submit" class="btn-block" name="submit-form">Submit</button>
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+
+  </body>
+</html>
